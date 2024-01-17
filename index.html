@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/css/app.css">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+
+</head>
+
+<body>
+
+    <header class="">
+
+        <nav class="navbar w-100 navbar-expand-lg border-bottom border-black border-1">
+            <div class="container">
+                <a class="navbar-brand" href="#">Lions Resto</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active text-black fw-medium border-bottom border-2 border-black w-100"
+                                aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-black fw-medium " href="#About
+                            ">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-black fw-medium" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-black fw-medium" href="./public/pages/product.html">Produits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-black fw-medium" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black fw-medium" href="#">Contact</a>
+                        </li>
+
+                    </ul>
+                    <a href="" class=" text-decoration-none text-white fs-6 border bg-danger p-2 rounded-5"
+                        id="connexion">connexion</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="modale">
+            <div class="content">
+                <div class="d-flex align-items-center justify-content-center w-100 gap-3">
+                    <button id="sign" class="border-0 rounded-2 mt-2 p-1">
+                        <h3>sign-up</h3>
+                    </button>
+                    <button id="login" class="border-0 rounded-2 mt-2 p-1">
+                        <h3>login</h3>
+                    </button>
+                </div>
+                <div class="d-flex justify-content-end p-2 position-relative">
+                    <button class="px-3 border-0 rounded-1 position-absolute close fw-bold fs-4" id="close">X</button>
+                </div>
+                <div class="d-flex ">
+                    <div class="login d-flex flex-column">
+                        <form
+                            class="d-flex flex-column p-3 gap-2 justify-content-evenly h-75 w-50 border-2 border-white">
+                            <input type="text" placeholder="Enter your name" class="p-2 border-0 rounded-5">
+                            <input type="email" placeholder="Your email" class="p-2 border-0 rounded-5">
+                            <input type="password" placeholder="password" class="p-2 border-0 rounded-5">
+                            <input type="password" placeholder="confirm your password" class="p-2 border-0 rounded-5">
+
+                        </form>
+                        <button class="p-2">enter</button>
+
+
+                    </div>
+                    <div class="sign ">
+                        <form class="d-flex flex-column p-3 gap-2 justify-content-evenly h-50 w-50">
+                            <input type="email" placeholder="Your email" class="p-2 border-0 rounded-5">
+                            <input type="password" placeholder="password" class="p-2 border-0 rounded-5">
+
+                        </form>
+                        <button class="p-2">enter</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="hero d-flex align-items-center justify-content-evenly">
+            <div>
+                <h1 class="w-50">Enjoy Your Healthy Delicious Food</h1>
+                <p class="w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dicta tempore?
+                    Officiis provident
+                    ullam atque?</p>
+                <div class="d-flex align-items-center gap-4">
+                    <button class="bg-danger px-4 py-2 border-0 rounded-5"><a href=""
+                            class="text-decoration-none text-white fw-medium">Book a Table</a></button>
+                    <div>
+                        <i class="fa-solid fa-play rounded-circle border border-2 border-danger p-2 text-danger "></i>
+                        <a href="" class="text-decoration-none text-black fw-medium">Watch Video</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="./public/img/hero-img.png" alt="">
+            </div>
+        </section>
+
+
+        <section class="p-4 container">
+            <h5 class="fs-6 fw-bold text-center mt-2">ABOUT US</h5>
+            <h1 class="text-center">Learn More <span class="text-danger">Abour Us</span></h1>
+            <div class="d-flex gap-5 align-items-start p-4 justify-content-evenly">
+                <div class="w-100">
+                    <img class=" w-100 position-relative img2" src="./public/img/about(1).jpg" alt="">
+                    <div class="position-absolute book d-flex flex-column align-items-center w-25 bg-white">
+                        <h2 class="fs-4 fw-medium">Book a Table</h2>
+                        <h2 class="text-danger fw-medium">+1 5589 55488 55</h2>
+                    </div>
+                </div>
+                <div class="d-flex flex-column mt-2">
+                    <p class="fw-medium"><i>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus
+                            excepturi iure amet
+                            distinctio eligendi autem fuga tenetur eaque nesciunt accusantium!</i></p>
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-check mb-2"></i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-check  mb-2"></i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-check mb-2"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam esse deserunt itaque a
+                            adipisci consectetur repellat et quasi asperiores officia!</p>
+                    </div>
+                    <div>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia quidem dolorem facere tempora,
+                        sapiente delectus harum porro velit. Vero vitae commodi amet nobis debitis dolorem aspernatur in
+                        necessitatibus minus laborum!
+                    </div>
+                    <div class="w-100">
+                        <img class="w-75" src="./public/img/about-2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="d-flex bg-body-secondary gap-3 w-100">
+
+            <div class="d-flex gap-4  p-5 h-100">
+                <div class="bg-d p-5 bg-danger choose d-flex flex-column gap-4 text-white">
+                    <h1 class="w-75">Why Choose Yummy?</h1>
+                    <p class="w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolores harum
+                        provident nisi
+                        dolorum distinctio architecto, culpa nam totam quos. Recusandae accusantium dolorum magni atque
+                        quo
+                        soluta architecto pariatur similique?</p>
+                    <div class="p-2 d-flex align-items-center justify-content-center w-100">
+                        <button class="px-3 py-2 border-0 rounded-5  bg-white opacity-50">Learn more</button>
+                    </div>
+                </div>
+
+                <div class="d-flex mt-5 mb-5 gap-4 h-100">
+                    <div class="bg-white p-5 d-flex flex-column h-25 gap-3">
+                        <i
+                            class="fa-regular fa-clipboard fs-1 text-center w-100 text-danger"></i>
+                        <h3 class="fs-4 text-center ">Corpris volupalte ifficia eisssss</h3>
+                        <p class="w-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolores
+                            harum provident nisi
+                            dolorum distinctio architecto, culpa nam totam quos. Recusandae accusantium</p>
+
+                    </div>
+
+
+                    <div class="bg-white p-5 d-flex flex-column h-25 gap-3">
+                        <i
+                            class="fa-regular fa-gem fs-1 text-center w-100 text-danger "></i>
+                        <h3 class="fs-4 text-center ">Corpris volupalte ifficia eisssss</h3>
+                        <p class="w-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolores
+                            harum provident nisi
+                            dolorum distinctio architecto, culpa nam totam quos. Recusandae accusantium</p>
+
+                    </div>
+
+
+                    <div class="bg-white p-5 d-flex flex-column h-25 gap-3">
+                        <i
+                        class="fa-solid fa-server fs-1 text-center w-100 text-danger"></i>
+                        <h3 class="fs-4 text-center ">Corpris volupalte ifficia eisssss</h3>
+                        <p class="w-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolores
+                            harum provident nisi
+                            dolorum distinctio architecto, culpa nam totam quos. Recusandae accusantium</p>
+
+                    </div>
+
+
+
+                    <!-- <div class="bg-white p-5 d-flex flex-column gap-3">
+                        <i
+                            class="fa-regular fa-gem fs-1 text-center w-75 text-danger border border-1 border-danger"></i>
+                        <h3 class="fs-4 text-center">Corpris volupalte ifficia eisssss</h3>
+                        <p class="w-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolores
+                            harum provident nisi
+                            dolorum distinctio architecto, culpa nam totam quos. Recusandae accusantiu</p>
+
+                    </div>
+
+                    <div class="bg-white p-5 d-flex flex-column gap-3">
+
+                        <i
+                            class="fa-solid fa-server fs-1 text-center w-75 text-danger border border-1 border-danger"></i>
+                        <h3 class="fs-4 text-center">Corpris volupalte ifficia eisssss</h3>
+                        <p class="w-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolores
+                            harum provident nisi
+                            dolorum distinctio architecto, culpa nam totam quos. Recusandae accusantium</p>
+
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+
+        <section class="p-5">
+            <h5 class="text-center fs-6">OUR MENU</h5>
+            <h2 class="text-center">Check Our <span class="text-danger">Yummy Menu</span></h2>
+            
+        </section>
+    </main>
+
+
+
+
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./public/js/app.js"></script>
+</body>
+
+</html>
