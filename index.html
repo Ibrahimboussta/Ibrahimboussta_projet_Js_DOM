@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./public/css/app.css">
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./public/css/app.css">
 
 </head>
 
 <body>
 
+    <!-- ^ Header -->
     <header class="">
 
         <nav class="navbar w-100 navbar-expand-lg border-bottom border-black border-1">
@@ -51,10 +52,11 @@
             </div>
         </nav>
 
-        <div class="modale">
+        <!-- * Modale  -->
+        <div class="modale position-fixed">
             <div class="content">
                 <div class="d-flex align-items-center justify-content-center w-100 gap-3">
-                    <button id="sign" class="border-0 rounded-2 mt-2 p-1">
+                    <button id="sign">
                         <h3>sign-up</h3>
                     </button>
                     <button id="login" class="border-0 rounded-2 mt-2 p-1">
@@ -64,36 +66,38 @@
                 <div class="d-flex justify-content-end p-2 position-relative">
                     <button class="px-3 border-0 rounded-1 position-absolute close fw-bold fs-4" id="close">X</button>
                 </div>
-                <div class="d-flex ">
-                    <div class="login d-flex flex-column">
-                        <form
+                <div class="d-flex d-flex justify-content-center align-items-center">
+                    <div class="sign ">
+                        <div
                             class="d-flex flex-column p-3 gap-2 justify-content-evenly h-75 w-50 border-2 border-white">
-                            <input type="text" placeholder="Enter your name" class="p-2 border-0 rounded-5">
-                            <input type="email" placeholder="Your email" class="p-2 border-0 rounded-5">
-                            <input type="password" placeholder="password" class="p-2 border-0 rounded-5">
-                            <input type="password" placeholder="confirm your password" class="p-2 border-0 rounded-5">
-
-                        </form>
-                        <button class="p-2">enter</button>
+                            <input type="text" placeholder="Enter your name" class="p-2 border-0 rounded-5 w-100">
+                            <input type="email" placeholder="Your email" class="p-2 border-0 rounded-5 w-100">
+                            <input type="password" placeholder="password" class="p-2 border-0 rounded-5 w-100">
+                            <input type="password" placeholder="confirm your password"
+                                class="p-2 border-0 rounded-5 w-100">
+                        </div>
+                        <button class="p-2 mx-4">enter</button>
 
 
                     </div>
-                    <div class="sign ">
-                        <form class="d-flex flex-column p-3 gap-2 justify-content-evenly h-50 w-50">
+                    <div class="login ">
+                        <div class="d-flex flex-column p-3 gap-2 justify-content-evenly h-50 w-50">
                             <input type="email" placeholder="Your email" class="p-2 border-0 rounded-5">
                             <input type="password" placeholder="password" class="p-2 border-0 rounded-5">
-
-                        </form>
-                        <button class="p-2">enter</button>
+                            <button class="p-2">enter</button>
+                        </div>
 
                     </div>
                 </div>
             </div>
+            <!-- * -->
         </div>
     </header>
 
 
+    <!-- ^ Main -->
     <main>
+        <!-- * Hero Section -->
         <section class="hero d-flex align-items-center justify-content-evenly">
             <div class="enjoy">
                 <h1 class="w-50 food">Enjoy Your Healthy Delicious Food</h1>
@@ -105,17 +109,25 @@
                             class="text-decoration-none text-white fw-medium">Book a Table</a></button>
                     <div>
                         <i class="fa-solid fa-play rounded-circle border border-2 border-danger p-2 text-danger "></i>
-                        <a href="" class="text-decoration-none text-black fw-medium">Watch Video</a>
+                        <a class="text-decoration-none text-black fw-medium " id="video">Watch Video</a>
                     </div>
                 </div>
             </div>
             <div>
                 <img class="hero_img" src="./public/img/hero-img.png" alt="">
             </div>
+
+            <div class="position-relative">
+                <iframe class="video" width="1200" height="500"
+                    src="https://www.youtube.com/embed/hN9mgsNWZrU?si=jU7KjGoVGCwiHqJA" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
         </section>
 
-
-        <section class="p-4 container">
+        <!-- * About -->
+        <section id="about" class="p-4 container">
             <h5 class="fs-6 fw-bold text-center mt-2">ABOUT US</h5>
             <h1 class="text-center">Learn More <span class="text-danger">Abour Us</span></h1>
             <div class="d-flex gap-5 align-items-start p-4 justify-content-evenly about">
@@ -155,6 +167,7 @@
             </div>
         </section>
 
+        <!-- * Why Us -->
         <section class="d-flex bg-body-secondary gap-3 w-100 ">
 
             <div class="d-flex gap-4  p-5 h-100 shoose">
@@ -227,6 +240,7 @@
             </div>
         </section>
 
+        <!-- * ar9am -->
         <section>
             <div>
                 <div class="">
@@ -254,72 +268,204 @@
             </div>
         </section>
 
+
+        <!-- ! JAHHHHHHHHHHHHHHHHHIM -->
         <section class="p-5">
             <h5 class="text-center fs-6">OUR MENU</h5>
             <h2 class="text-center">Check Our <span class="text-danger">Yummy Menu</span></h2>
-            <div class="text-center">
-                <p id="starter">Starts</p>
-                <p id="braekfast">Braekfast</p>
+            <!--* menu breakfast -->
 
-                <a href="">Lunch</a>
-                <a href="">Dinner</a>
-            </div>
 
-            <div>
-                <p class="text-center">Menu</p>
-                <h2 class="text-center">Starts</h2>
-                <div class="d-flex justify-content-evenly" id="Starter">
-                    <div class="w-100 d-flex align-items-center flex-column">
-                        <img width="70%" src="./public/img/menu/menu-item-1(1).png" alt="">
-                        <h3>Magnan Tiste</h3>
-                        <p class="text-body-secondary">Lorem, ipsum ,dolor, sit, amet.</p>
-                        <h4 class="text-danger fw-bold">$5.95</h4>
+
+            <div class="d-flex align-items-center flex-column">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true">BreakFast</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">Lunch</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                            aria-selected="false">Dinner</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab" tabindex="0">
+
+                        <div class="d-flex justify-content-evenly breakfast-menu " id="Starter">
+                            <div class="w-100 d-flex align-items-center flex-column">
+                                <img width="70%" src="./public/img/menu/menu-item-1(1).png" alt="">
+                                <h3>Magnan Tiste</h3>
+                                <p class="text-body-secondary">Lorem, ipsum ,dolor, sit, amet.</p>
+                                <h4 class="text-danger fw-bold">$5.95</h4>
+                            </div>
+
+                            <div class="w-100 d-flex align-items-center flex-column">
+                                <img width="70%" src="./public/img/menu/menu-item-2(1).png" alt="">
+                                <h3>Magnan Tiste</h3>
+                                <p class="text-body-secondary">Lorem, ipsum ,dolor, sit, amet.</p>
+                                <h4 class="text-danger fw-bold">$15.95</h4>
+                            </div>
+
+                            <div class="w-100 d-flex align-items-center flex-column">
+                                <img width="70%" src="./public/img/menu/menu-item-3(1).png" alt="">
+                                <h3>Magnan Tiste</h3>
+                                <p class="text-body-secondary">Lorem, ipsum ,dolor, sit, amet.</p>
+                                <h4 class="text-danger fw-bold">$8.95</h4>
+                            </div>
+                            <!-- <img width="25%" src="./public/img/menu/menu-item-2(1).png" alt="">
+                            <img width="25%" src="./public/img/menu/menu-item-3(1).png" alt=""> -->
+                        </div>
+
+                        <div class=" d-flex justify-content-evenly">
+                            <div class="w-100 d-flex align-items-center flex-column">
+                                <img width="70%" src="./public/img/menu/menu-item-4(1).png" alt="">
+                                <h3>Magnan Tiste</h3>
+                                <p class="text-body-secondary">Lorem, ipsum ,dolor, sit, amet.</p>
+                                <h4 class="text-danger fw-bold">$12.95</h4>
+                            </div>
+
+                            <div class="w-100 d-flex align-items-center flex-column">
+                                <img width="70%" src="./public/img/menu/menu-item-5(1).png" alt="">
+                                <h3>Magnan Tiste</h3>
+                                <p class="text-body-secondary">Lorem, ipsum ,dolor, sit, amet.</p>
+                                <h4 class="text-danger fw-bold">$12.95</h4>
+                            </div>
+
+                            <div class="w-100 d-flex align-items-center flex-column">
+                                <img width="70%" src="./public/img/menu/menu-item-6(1).png" alt="">
+                                <h3>Magnan Tiste</h3>
+                                <p class="text-body-secondary">Lorem, ipsum ,dolor, sit, amet.</p>
+                                <h4 class="text-danger fw-bold">$9.95</h4>
+                            </div>
+                            <!-- <img width="25%" src="./public/img/menu/menu-item-2(1).png" alt="">
+                            <img width="25%" src="./public/img/menu/menu-item-3(1).png" alt=""> -->
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                        tabindex="0">
+
+
+                        <div class=" d-flex justify-content-evenly">
+                            <div class="w-100 d-flex align-items-center flex-column">
+                                <img width="70%" src="./public/img/menu/menu-item-4(1).png" alt="">
+                                <h3>Magnan Tiste</h3>
+                                <p class="text-body-secondary">Lorem, ipsum ,dolor, sit, amet.</p>
+                                <h4 class="text-danger fw-bold">$12.95</h4>
+                            </div>
+
+                            <div class="w-100 d-flex align-items-center flex-column">
+                                <img width="70%" src="./public/img/menu/menu-item-5(1).png" alt="">
+                                <h3>Magnan Tiste</h3>
+                                <p class="text-body-secondary">Lorem, ipsum ,dolor, sit, amet.</p>
+                                <h4 class="text-danger fw-bold">$12.95</h4>
+                            </div>
+
+                            <div class="w-100 d-flex align-items-center flex-column">
+                                <img width="70%" src="./public/img/menu/menu-item-6(1).png" alt="">
+                                <h3>Magnan Tiste</h3>
+                                <p class="text-body-secondary">Lorem, ipsum ,dolor, sit, amet.</p>
+                                <h4 class="text-danger fw-bold">$9.95</h4>
+                            </div>
+                            <!-- <img width="25%" src="./public/img/menu/menu-item-2(1).png" alt="">
+                            <img width="25%" src="./public/img/menu/menu-item-3(1).png" alt=""> -->
+                        </div>
+
+                        <div class="d-flex justify-content-evenly breakfast-menu " id="Starter">
+                            <div class="w-100 d-flex align-items-center flex-column">
+                                <img width="70%" src="./public/img/menu/menu-item-1(1).png" alt="">
+                                <h3>Magnan Tiste</h3>
+                                <p class="text-body-secondary">Lorem, ipsum ,dolor, sit, amet.</p>
+                                <h4 class="text-danger fw-bold">$5.95</h4>
+                            </div>
+
+                            <div class="w-100 d-flex align-items-center flex-column">
+                                <img width="70%" src="./public/img/menu/menu-item-2(1).png" alt="">
+                                <h3>Magnan Tiste</h3>
+                                <p class="text-body-secondary">Lorem, ipsum ,dolor, sit, amet.</p>
+                                <h4 class="text-danger fw-bold">$15.95</h4>
+                            </div>
+
+                            <div class="w-100 d-flex align-items-center flex-column">
+                                <img width="70%" src="./public/img/menu/menu-item-3(1).png" alt="">
+                                <h3>Magnan Tiste</h3>
+                                <p class="text-body-secondary">Lorem, ipsum ,dolor, sit, amet.</p>
+                                <h4 class="text-danger fw-bold">$8.95</h4>
+                            </div>
+                            <!-- <img width="25%" src="./public/img/menu/menu-item-2(1).png" alt="">
+                            <img width="25%" src="./public/img/menu/menu-item-3(1).png" alt=""> -->
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                        tabindex="0">
+
+                        <div class="d-flex justify-content-evenly breakfast-menu " id="Starter">
+                            <div class="w-100 d-flex align-items-center flex-column">
+                                <img width="70%" src="./public/img/menu/menu-item-1(1).png" alt="">
+                                <h3>Magnan Tiste</h3>
+                                <p class="text-body-secondary">Lorem, ipsum ,dolor, sit, amet.</p>
+                                <h4 class="text-danger fw-bold">$5.95</h4>
+                            </div>
+
+                            <div class="w-100 d-flex align-items-center flex-column">
+                                <img width="70%" src="./public/img/menu/menu-item-2(1).png" alt="">
+                                <h3>Magnan Tiste</h3>
+                                <p class="text-body-secondary">Lorem, ipsum ,dolor, sit, amet.</p>
+                                <h4 class="text-danger fw-bold">$15.95</h4>
+                            </div>
+
+                            <div class="w-100 d-flex align-items-center flex-column">
+                                <img width="70%" src="./public/img/menu/menu-item-3(1).png" alt="">
+                                <h3>Magnan Tiste</h3>
+                                <p class="text-body-secondary">Lorem, ipsum ,dolor, sit, amet.</p>
+                                <h4 class="text-danger fw-bold">$8.95</h4>
+                            </div>
+                            <!-- <img width="25%" src="./public/img/menu/menu-item-2(1).png" alt="">
+                            <img width="25%" src="./public/img/menu/menu-item-3(1).png" alt=""> -->
+                        </div>
+
+                        <div class=" d-flex justify-content-evenly">
+                            <div class="w-100 d-flex align-items-center flex-column">
+                                <img width="70%" src="./public/img/menu/menu-item-4(1).png" alt="">
+                                <h3>Magnan Tiste</h3>
+                                <p class="text-body-secondary">Lorem, ipsum ,dolor, sit, amet.</p>
+                                <h4 class="text-danger fw-bold">$12.95</h4>
+                            </div>
+
+                            <div class="w-100 d-flex align-items-center flex-column">
+                                <img width="70%" src="./public/img/menu/menu-item-5(1).png" alt="">
+                                <h3>Magnan Tiste</h3>
+                                <p class="text-body-secondary">Lorem, ipsum ,dolor, sit, amet.</p>
+                                <h4 class="text-danger fw-bold">$12.95</h4>
+                            </div>
+
+                            <div class="w-100 d-flex align-items-center flex-column">
+                                <img width="70%" src="./public/img/menu/menu-item-6(1).png" alt="">
+                                <h3>Magnan Tiste</h3>
+                                <p class="text-body-secondary">Lorem, ipsum ,dolor, sit, amet.</p>
+                                <h4 class="text-danger fw-bold">$9.95</h4>
+                            </div>
+                            <!-- <img width="25%" src="./public/img/menu/menu-item-2(1).png" alt="">
+                            <img width="25%" src="./public/img/menu/menu-item-3(1).png" alt=""> -->
+                        </div>
+
+
+
                     </div>
 
-                    <div class="w-100 d-flex align-items-center flex-column">
-                        <img width="70%" src="./public/img/menu/menu-item-2(1).png" alt="">
-                        <h3>Magnan Tiste</h3>
-                        <p class="text-body-secondary">Lorem, ipsum ,dolor, sit, amet.</p>
-                        <h4 class="text-danger fw-bold">$15.95</h4>
-                    </div>
-
-                    <div class="w-100 d-flex align-items-center flex-column">
-                        <img width="70%" src="./public/img/menu/menu-item-3(1).png" alt="">
-                        <h3>Magnan Tiste</h3>
-                        <p class="text-body-secondary">Lorem, ipsum ,dolor, sit, amet.</p>
-                        <h4 class="text-danger fw-bold">$8.95</h4>
-                    </div>
-                    <!-- <img width="25%" src="./public/img/menu/menu-item-2(1).png" alt="">
-                    <img width="25%" src="./public/img/menu/menu-item-3(1).png" alt=""> -->
                 </div>
-                <div class="d-flex justify-content-evenly" id="Starter">
-                    <div class="w-100 d-flex align-items-center flex-column">
-                        <img width="70%" src="./public/img/menu/menu-item-4(1).png" alt="">
-                        <h3>Magnan Tiste</h3>
-                        <p class="text-body-secondary">Lorem, ipsum ,dolor, sit, amet.</p>
-                        <h4 class="text-danger fw-bold">$12.95</h4>
-                    </div>
 
-                    <div class="w-100 d-flex align-items-center flex-column">
-                        <img width="70%" src="./public/img/menu/menu-item-5(1).png" alt="">
-                        <h3>Magnan Tiste</h3>
-                        <p class="text-body-secondary">Lorem, ipsum ,dolor, sit, amet.</p>
-                        <h4 class="text-danger fw-bold">$12.95</h4>
-                    </div>
-
-                    <div class="w-100 d-flex align-items-center flex-column">
-                        <img width="70%" src="./public/img/menu/menu-item-6(1).png" alt="">
-                        <h3>Magnan Tiste</h3>
-                        <p class="text-body-secondary">Lorem, ipsum ,dolor, sit, amet.</p>
-                        <h4 class="text-danger fw-bold">$9.95</h4>
-                    </div>
-                    <!-- <img width="25%" src="./public/img/menu/menu-item-2(1).png" alt="">
-                    <img width="25%" src="./public/img/menu/menu-item-3(1).png" alt=""> -->
-                </div>
-            </div>
         </section>
 
-
+        <!-- *carousel btrp -->
         <section class="bg-body-secondary h-25">
             <div id="carouselExampleCaptions" class="carousel slide">
                 <div class="carousel-indicators">
@@ -460,6 +606,7 @@
             </div>
         </section>
 
+        <!-- * Carousel-1 -->
         <section class="p-5">
             <h5 class="text-center">Event</h5>
             <h1 class="text-center">Share <span class="text-danger">Your moment</span> in our Resturant</h1>
@@ -511,52 +658,63 @@
             </div>
         </section>
 
+
+        <!-- * Chefs -->
         <section class=" chefs p-5">
             <h5 class="text-center">CHEFS</h5>
             <h1 class="text-center">Our <span class="text-danger">Profesional</span> Chefs</h1>
 
-            <div class="p-5">
-                <div class="d-flex gap-5 w-100 shef">
-                    <div class="position-relative shadow">
-                        <img width="100%" class="chef" src="./public/img/chefs/chefs-1(1).jpg" alt="">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./public/img/chefs/chefs-1(1).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="facion1">
+                            </div>
+                            <!-- <img src="./public/img/team-shape(1).svg" alt=""> -->
+                            <h1 class="text-center">Wallter white</h1>
+                            <p class="text-center">Designer</p>
+                            <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae quis
+                                tempora dolorem
+                                praesentium nulla sint saepe nihil voluptate repellat tenetur?</p>
+                        </div>
                     </div>
-                    <div class="wallter">
-                        <h3 class=" text-center p-3">Wallter white</h3>
-                        <p class="text-secondary text-center">master chef</p>
-                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo laboriosam
-                            optio rerum
-                            dignissimos, praesentium soluta dolorem tenetur similique nostrum cumque expedita sunt vel
-                        </p>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./public/img/chefs/chefs-1(1).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="facion1">
+                            </div>
+                            <!-- <img src="./public/img/team-shape(1).svg" alt=""> -->
+                            <h1 class="text-center">Wallter white</h1>
+                            <p class="text-center">Designer</p>
+                            <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae quis
+                                tempora dolorem
+                                praesentium nulla sint saepe nihil voluptate repellat tenetur?</p>
+                        </div>
                     </div>
-
-                    <div class="position-relative shadow">
-                        <img width="100%" src="./public/img/chefs/chefs-2(1).jpg" alt="">
-                    </div>
-                    <div class="sarah">
-                        <h3 class=" text-center p-3">sarah white</h3>
-                        <p class="text-secondary text-center">master chef</p>
-                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo laboriosam
-                            optio rerum
-                            dignissimos, praesentium soluta dolorem tenetur similique nostrum cumque expedita sunt vel
-                        </p>
-                    </div>
-
-                    <div class="position-relative shadow">
-                        <img width="100%" src="./public/img/chefs/chefs-3(1).jpg" alt="">
-                    </div>
-                    <div class="william">
-                        <h3 class=" text-center p-3">willaim white</h3>
-                        <p class="text-secondary text-center">master chef</p>
-                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo laboriosam
-                            optio rerum
-                            dignissimos, praesentium soluta dolorem tenetur similique nostrum cumque expedita sunt vel
-                        </p>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./public/img/chefs/chefs-1(1).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="facion1">
+                            </div>
+                            <!-- <img src="./public/img/team-shape(1).svg" alt=""> -->
+                            <h1 class="text-center">Wallter white</h1>
+                            <p class="text-center">Designer</p>
+                            <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae quis
+                                tempora dolorem
+                                praesentium nulla sint saepe nihil voluptate repellat tenetur?</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-
+        
+        <!-- *Book A Table -->
         <section class="p-5" id="Table">
             <h5 class="text-center">Book A Table</h5>
             <h1 class="text-center">Book <span class="text-danger">Your Stay</span> With Us</h1>
@@ -608,11 +766,12 @@
             </div>
         </section>
 
+        <!-- * Carousel-2 -->
         <section class="d-flex align-items-center justify-content-center h-100">
             <h1>carousellllllllllllll</h1>
         </section>
 
-
+        <!-- * Map -->
         <section class="p-5">
             <h5 class="text-center">Book A Table</h5>
             <h1 class="text-center">Book <span class="text-danger">Your Stay</span> With Us</h1>
@@ -685,7 +844,7 @@
         </section>
     </main>
 
-
+    <!-- ^ Footer -->
     <footer class="bg-dark">
         <div class="d-flex flex-lg-row flex-column text-white w-100 container p-5 gap-4 border-bottom">
             <div class="d-flex align-items-start gap-2">
@@ -733,7 +892,7 @@
                         <div class="border border-2 rounded-circle p-2">
                             <i class="fa-brands fa-instagram fs-3"></i>
                         </div>
-    
+
                         <div class="border border-2 rounded-circle p-2">
                             <i class="fa-brands fa-linkedin fs-3"></i>
                         </div>
@@ -751,10 +910,8 @@
 
 
 
-
-
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="./public/js/app.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
