@@ -14,9 +14,22 @@ login.addEventListener('click', () => {
     login_in.style.display = 'block'
     sign_in.style.display = 'none'
 })
-connexion.addEventListener('click', () =>{
+connexion.addEventListener('click', () => {
     modale.style.display = 'block'
 })
 close.addEventListener('click', () => {
     modale.style.display = 'none'
+})
+
+let BreakFast = document.getElementById('braekfast')
+let Starter = document.getElementById('starter')
+let starter = document.getElementById('Starter')
+let braekFast = document.getElementById('BraekFast')
+console.log(BreakFast, Starter);
+
+BreakFast.addEventListener('click', () => {
+    // console.log('hihi');
+    starter.style.display = 'block'
+
+
 })
