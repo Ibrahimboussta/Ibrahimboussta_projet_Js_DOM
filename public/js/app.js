@@ -62,39 +62,6 @@ fermer1.addEventListener('click', () => {
 })
 
 
-// let img = document.querySelectorAll('#imges')
-// let prevBtn = document.getElementById('prevBtn')
-// let nextBtn = document.getElementById('nextBtn')
-// let dots = document.querySelectorAll('.dot')
-// // console.log(img);
-
-// let counter = 0
-
-// nextBtn.addEventListener('click', nextSlide)
-// function nextSlide() {
-//     img[counter].style.animation = 'next1 0.5s ease-in forwards'
-//     if (counter >= img.length - 1) {
-//         counter = 0;
-//     }else{
-//         counter++;
-//     }
-//     img[counter].style.animation = 'next2 0.5s ease-in forwards'
-
-// }
-
-// let slidInit = () => {
-//     let imgList = document.querySelectorAll('#imges')
-//     let btns = document.querySelectorAll('.prevBtn', '.nextBtn')
-
-//     btns.forEach(element => {
-//         element.addEventListener('click', () => {
-//             console.log(element);
-//             let direction = element.id === ''
-//         })
-//     });
-// }
-
-
 let images = document.querySelectorAll('.item')
 let prevBtn = document.getElementById('prevBtn')
 let nextBtn = document.getElementById('nextBtn')
@@ -105,13 +72,14 @@ nextBtn.addEventListener('click', nextSlide)
 prevBtn.addEventListener('click', prevSlide)
 
 function nextSlide(){
-    images.scrollLeft += counter
+    images.scrollLeft += 20
     if (counter + 1 > counterLenght) {
         counter = 0
     }else{
         counter++
     }
 }
+nextSlide()
 
 
 function prevSlide(){
@@ -123,11 +91,3 @@ function prevSlide(){
     }
 }
 
-// nextBtn.addEventListener('click', function(){
-//     if (counter + 1 > counterLenght) {
-//         counter = 0
-//     }else{
-//         counter = counter + 1
-//     }
-//     nextSlide()
-// })

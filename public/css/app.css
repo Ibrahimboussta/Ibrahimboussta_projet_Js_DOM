@@ -12084,6 +12084,17 @@ textarea {
   width: 33.5%;
 }
 
+.btnSide {
+  background: red;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
+  padding: 20px;
+}
+
 @media (max-width: 426px) {
   body {
     overflow-x: hidden;
@@ -12128,6 +12139,7 @@ textarea {
   }
   .shoose {
     flex-direction: column;
+    padding: 0;
   }
   .shoose .choose {
     height: 100%;
@@ -12195,6 +12207,15 @@ textarea {
   .stat {
     flex-direction: column;
     text-align: center;
+  }
+  .Contact {
+    overflow-x: hidden;
+  }
+  .contat {
+    padding: 0 !important;
+  }
+  #home² {
+    display: none;
   }
 }
 
