@@ -11871,12 +11871,19 @@ textarea.form-control-lg {
   justify-content: center;
   height: 80vh;
   width: 100%;
-  display: none;
+  z-index: 1;
+  opacity: 100%;
 }
 .modale .content {
-  background: #000;
-  width: 50vw;
-  height: 56.2vh;
+  background: rgba(0, 0, 0, 0.6470588235);
+  opacity: 95%;
+  width: 50%;
+  height: 65vh;
+  border: 2px solid white;
+  box-shadow: 0 1px 25px red;
+  border-radius: 10px;
+  padding: 20px;
+  z-index: 2;
 }
 .modale .content .login {
   background: red;
@@ -11886,11 +11893,10 @@ textarea.form-control-lg {
   display: flex;
   justify-content: center;
   align-items: center;
-  display: none;
 }
 .modale .content .sign {
   background: green;
-  width: 75vw;
+  width: 50%;
   height: 50vh;
 }
 .modale .content .close {
@@ -11926,21 +11932,46 @@ textarea.form-control-lg {
   top: -38vh;
 }
 
-.blur {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(3px);
-  z-index: 1;
+.video1 {
+  display: none;
+  position: absolute;
+  right: 8vw;
+  top: -70vh;
+}
+
+.fermer1 {
+  display: none;
+  position: absolute;
+  right: 6.5vw;
+  top: -73vh;
+  background: black;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.fermer {
+  display: none;
+  position: absolute;
+  right: 6.5vw;
+  top: -41vh;
+  background: black;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 #video {
   cursor: pointer;
+}
+
+.playvd {
+  background-image: url(../img/about-2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 37.8vh;
 }
 
 .choose {
@@ -11952,11 +11983,19 @@ textarea.form-control-lg {
 }
 
 .carousel {
+  position: relative;
   overflow: auto;
   scrollbar-width: none;
 }
 .carousel::-webkit-scrollbar {
   display: none;
+}
+
+.btnCarsl {
+  position: absolute;
+  top: 650vh;
+  width: 92vw;
+  padding: 10px;
 }
 
 .event1 {
@@ -12039,6 +12078,10 @@ textarea {
   background: url("../img/team-shape(1).svg");
   background-repeat: no-repeat;
   z-index: 999;
+}
+
+.item {
+  width: 33.5%;
 }
 
 @media (max-width: 426px) {

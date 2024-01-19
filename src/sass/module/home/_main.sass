@@ -16,24 +16,55 @@
     position: absolute
     right: 8vw
     top: -38vh
+.video1
+    display: none
+    position: absolute
+    right: 8vw
+    top: -70vh
+.fermer1
+    display: none
+    position: absolute
+    right: 6.5vw
+    top: -73vh
+    background: black
+    color: white
+    padding: 5px 15px
+    border-radius: 50%
+    cursor: pointer
+.fermer
+    display: none
+    position: absolute
+    right: 6.5vw
+    top: -41vh
+    background: black
+    color: white
+    padding: 5px 15px
+    border-radius: 50%
+    cursor: pointer
     // z-index: 999
 .blur
-    position: fixed
-    top: 0
-    bottom: 0
-    left: 0
-    right: 0
-    width: 100%
-    height: 100%
-    background: rgba(0, 0, 0, 0.5)
-    backdrop-filter: blur(3px)
-    z-index: 1
+    // filter: blur(5px)
+    // -webkit-filter: blur(5px)
+    // -moz-filter: blur(5px)
+    // -o-filter: blur(5px)
+    // -ms-filter: blur(5px)
 #video
     cursor: pointer
 // .office
 //     height: fit-content
 //     width: 100vw
+.playvd
+    background-image: url(../img/about-2.jpg)
+    background-position: center
+    background-size: cover
+    height: 37.8vh
 
+
+// .img_vd
+//     position: relative
+// .play
+//     position: absolute
+//     height: 30vh
 .choose
     height: 70vh
 // #Starter
@@ -41,10 +72,18 @@
 .sara
     border-left: 4px solid red
 .carousel
+    position: relative
     overflow: auto
     scrollbar-width: none
+
     &::-webkit-scrollbar
         display: none
+.btnCarsl
+    position: absolute
+    top: 650vh
+    width: 92vw
+    padding: 10px
+
 .event1
     background: #000
     height: 90vh
@@ -106,10 +145,13 @@ textarea
     background-repeat: no-repeat
     z-index: 999
 
+.item
+    width: 33.5%
 @media (max-width : 426px)
 
     body
         overflow-x: hidden
+        // width: 100%
 
     .hero
         flex-direction: column-reverse
